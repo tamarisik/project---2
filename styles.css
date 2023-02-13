@@ -1,0 +1,191 @@
+* {
+box-sizing: border-box;
+
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 10px;
+
+}
+ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.social > img {
+    width: 30px;
+    height: auto;
+}
+
+.cover {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+.cover-button {
+    border: 2px solid black;
+    background-color: green;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+.cover {
+    background-image: url(pictures/indonesia.jpg);
+    width: 100%;
+    margin: auto;
+    padding: 200px;
+    text-align: center;
+}
+.phone {
+    margin: 0;
+}
+
+
+.whereTo {
+    background: #040E27;
+    padding: 50px 0;
+    text-align: left;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+input[type="text"]
+{
+    background: transparent;
+    color: white;
+    padding: 10px;
+    margin:10px;
+
+   
+}
+input[type="date"] {
+    background: transparent;
+    color: white;
+    padding: 10px;
+    margin:10px;
+
+}
+
+input[type="search"] {
+    background: transparent;
+    color: white;
+    padding: 10px;
+    margin:10px;
+    font-size: 30px;
+    display: inline-block;
+}
+ #butto {
+    float: left;
+    padding: 5px;
+    background: #f32125;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    
+  }
+
+  .pop-text {
+   text-align: center;
+   margin: 50px;
+
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+  }
+
+  .photo-grid > img {
+    width: 400px;
+    height: auto;
+  }
+  .photo-grid > img:hover {
+ opacity: 0.7;
+  }
+
+
+.news-box {
+    background-color: rgb(2, 2, 37);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+    margin-top: 20px;
+    color: white;
+    align-items: center;
+}
+
+.sub {
+    background-color: #f32125;
+    height: 45px;
+    width: 100px;
+}
+
+
+#email1 {
+    height: 40px;
+    width: 300px;
+}
+
+
+
+  
+@media screen and (max-width: 967px) {
+    .header {
+      display: block;
+      
+    }
+    .header-logo {
+        display: none;
+    }
+    
+    .social > img  {
+        margin-top: 10px;
+    }
+    .photo-grid {
+        display: block;
+        grid-template-rows: max-content;
+      }
+    
+      .photo-grid > img {
+        width: 200px;
+        height: auto;
+      }
+  }
+  
+.about-box {
+    background-image: url(pictures/chicago-city-lights-at-night.jpg);
+    padding: 200px;
+    text-align: center;
+    font-size: large;
+}
